@@ -4,7 +4,7 @@ install:
 		pip install -r requirements.txt
 format:
 	@echo "Formatting code..."
-	black *.py mylib/*.py
+	#black *.py mylib/*.py
 lint:
 	@echo "Linting..."
 	#pylint --disable=R,C *.py mylib/*.py
