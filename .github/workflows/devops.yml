@@ -17,10 +17,10 @@ jobs:
         run: make -C src install
 
       - name: Lint with pylint
-        run: make lint
+        run: make -C src lint
 
       - name: Test with pytest
-        run: make test
+        run: make -C src test
 
       - name: Format code
-        run: make format
+        run: make -C src format
